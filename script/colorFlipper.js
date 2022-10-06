@@ -4,7 +4,6 @@ const btn = document.getElementById('js_btn');
 const color = document.getElementById('js_color');
 
 btn.addEventListener('click', () => {
-  //TODO get random number
   const randomNumber = getRandomNumber();
 
   document.body.style.backgroundColor = colors[randomNumber];
