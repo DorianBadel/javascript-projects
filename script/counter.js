@@ -3,23 +3,17 @@
 displayedValue = document.getElementById("js_value");
 let value = displayedValue.innerText;
 //Buttons
-const decrease = document.getElementById("js_decrease");
-const increase = document.getElementById("js_increase");
-const reset = document.getElementById("js_reset");
+const btns = document.querySelectorAll('.btn');
 
-decrease.addEventListener('click', ()=>{
-  value--;
-  displayedValue.innerText = value;
+btns.forEach(function(btn){
+  btn.addEventListener('click',(e)=>{
+    const id = e.currentTarget.id;
+    id == "js_decrease"
+    ? value --
+    : id == "js_increase"
+    ? value ++
+    : value = 0;
+
+    displayedValue.innerText = value;
+  })
 });
-
-increase.addEventListener('click', ()=>{
-  value++;
-  displayedValue.innerText = value;
-});
-
-reset.addEventListener('click', ()=>{
-  value = 0;
-  displayedValue.innerText = value;
-});
-
-console.log(value);
