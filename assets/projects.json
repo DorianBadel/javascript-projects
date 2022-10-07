@@ -1,0 +1,40 @@
+{
+  "projects":[
+    {
+      "id":"0",
+      "img":"colorFlipper.jpeg",
+      "title":"Color Flipper",
+      "description":"Change colors based on array"
+    },
+    {
+      "id":"1",
+      "img":"counter.jpeg",
+      "title":"Counter App",
+      "description":"Simple counter app"
+    },
+    {
+      "id":"2",
+      "img":"reviews.jpeg",
+      "title":"Reviews App",
+      "description":"Array of reviews"
+    },
+    {
+      "id":"3",
+      "img":"navbar.jpeg",
+      "title":"Navbar App",
+      "description":"Navbar example"
+    },
+    {
+      "id":"4",
+      "img":"sidebar.jpeg",
+      "title":"Sidebar App",
+      "description":"Sidebar example"
+    },
+    {
+      "id":"5",
+      "img":"modal.jpeg",
+      "title":"Modal app",
+      "description":"Modal example"
+    }
+  ]
+}
