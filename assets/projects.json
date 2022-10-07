@@ -2,42 +2,42 @@
   "projects":[
     {
       "id":"0",
-      "img":"colorFlipper.jpeg",
+      "img":"colorFlipper",
       "title":"Color Flipper",
       "description":"Change colors based on array",
       "project":"colorFlipper_basic"
     },
     {
       "id":"1",
-      "img":"counter.jpeg",
+      "img":"counter",
       "title":"Counter App",
       "description":"Simple counter app",
       "project":"counter"
     },
     {
       "id":"2",
-      "img":"reviews.jpeg",
+      "img":"reviews",
       "title":"Reviews App",
       "description":"Array of reviews",
       "project":"reviews"
     },
     {
       "id":"3",
-      "img":"navbar.jpeg",
+      "img":"navbar",
       "title":"Navbar App",
       "description":"Navbar example",
       "project":"navbar"
     },
     {
       "id":"4",
-      "img":"sidebar.jpeg",
+      "img":"sidebar",
       "title":"Sidebar App",
       "description":"Sidebar example",
       "project":"sidebar"
     },
     {
       "id":"5",
-      "img":"modal.jpeg",
+      "img":"modal",
       "title":"Modal app",
       "description":"Modal example",
       "project":"modal"
