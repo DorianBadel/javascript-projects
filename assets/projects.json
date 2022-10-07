@@ -4,37 +4,43 @@
       "id":"0",
       "img":"colorFlipper.jpeg",
       "title":"Color Flipper",
-      "description":"Change colors based on array"
+      "description":"Change colors based on array",
+      "project":"colorFlipper_basic"
     },
     {
       "id":"1",
       "img":"counter.jpeg",
       "title":"Counter App",
-      "description":"Simple counter app"
+      "description":"Simple counter app",
+      "project":"counter"
     },
     {
       "id":"2",
       "img":"reviews.jpeg",
       "title":"Reviews App",
-      "description":"Array of reviews"
+      "description":"Array of reviews",
+      "project":"reviews"
     },
     {
       "id":"3",
       "img":"navbar.jpeg",
       "title":"Navbar App",
-      "description":"Navbar example"
+      "description":"Navbar example",
+      "project":"navbar"
     },
     {
       "id":"4",
       "img":"sidebar.jpeg",
       "title":"Sidebar App",
-      "description":"Sidebar example"
+      "description":"Sidebar example",
+      "project":"sidebar"
     },
     {
       "id":"5",
       "img":"modal.jpeg",
       "title":"Modal app",
-      "description":"Modal example"
+      "description":"Modal example",
+      "project":"modal"
     }
   ]
 }
