@@ -74,25 +74,14 @@ const menu = [
   ];
 
 const sectionCenter = document.querySelector('.section-center');
-const filterBtns = document.querySelectorAll('.filter-btn');
-
+const container = document.querySelector('.btn-container');
 
 window.addEventListener('DOMContentLoaded',()=>{
-    console.log("shake and bake");
      mapToHtml(menu);
-
+     displayFilters();
 });
 
-filterBtns.forEach(btn =>{
-  btn.addEventListener('click', (e)=>{
-    const category = e.currentTarget.dataset.id;
-    const menuCategory = menu.filter((menuItem)=>{
-      if(menuItem.category == category)
-       return menuItem;
-    });
-    category == 'all' ? mapToHtml(menu) : mapToHtml(menuCategory);
-  });
-})
+
 
 function mapToHtml(menuItems){
   let displayMenu =  menuItems.map((item)=>{
@@ -113,5 +102,38 @@ function mapToHtml(menuItems){
     })    
 
     sectionCenter.innerHTML = displayMenu.join("");
-
 }
+
+function displayFilters(){
+
+  const categories =  menu.reduce(
+   (values,item)=>{
+     if(!values.includes(item.category)){
+       values.push(item.category);
+     }
+    return values
+ },['all']);
+ 
+
+ const filters = categories.map((category)=>{
+   return `
+    <button class="filter-btn" type="button" data-id="${category}">${category}</button>
+
+   `;
+ }).join('');
+
+ container.innerHTML = filters;
+
+ const filterBtns = document.querySelectorAll('.filter-btn');
+
+ filterBtns.forEach(btn =>{
+  btn.addEventListener('click', (e)=>{
+    const category = e.currentTarget.dataset.id;
+    const menuCategory = menu.filter((menuItem)=>{
+      if(menuItem.category == category)
+       return menuItem;
+    });
+    category == 'all' ? mapToHtml(menu) : mapToHtml(menuCategory);
+  });
+})
+ }
